@@ -1,0 +1,39 @@
+
+.roll {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: -1;
+
+    &__item {
+        position: absolute;
+        top: -30em;
+        width: 50rem;
+
+        z-index: -1;
+        opacity: 0.5;
+
+        animation-name: roll-animate;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes roll-animate {
+    0% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 360deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}

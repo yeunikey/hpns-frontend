@@ -1,0 +1,78 @@
+
+.target {
+
+    & .container {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: center;
+        
+        &__num {
+            flex-basis: 3rem;
+
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        &__text {
+            flex-grow: 1;
+            flex-basis: 1rem;
+            font-size: 1.1rem;
+        }
+        
+    }
+
+}
+
+@media (max-width: 600px) {
+    .target {
+        
+        & .container {
+            max-width: 80vw;
+        }
+
+        &__item {
+
+            &__num {
+                flex-basis: 2rem;
+            }
+
+            &__text {
+                font-size: 1rem;
+            }
+        }
+
+    }
+}
+
+// Tables
+@media (min-width: 601px) and (max-width: 800px) {
+    .target {
+        
+        & .container {
+            max-width: 60vw;
+        }
+
+        &__item {
+
+            &__num {
+                flex-basis: 2rem;
+            }
+
+            &__text {
+                font-size: 1rem;
+            }
+        }
+
+    }
+}

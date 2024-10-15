@@ -1,0 +1,11 @@
+
+.page {
+    margin: 5rem 0;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .page {
+        margin: 3rem 0;   
+    }
+}

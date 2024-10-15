@@ -1,0 +1,21 @@
+
+.footer {
+    
+    flex-basis: 1rem;
+    margin: 1.5rem 0;
+    
+    &__content {
+        color: #999;
+
+        & a {
+            margin-left: 0.5rem;
+            text-decoration: none;
+
+            color: #bababa;
+            
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

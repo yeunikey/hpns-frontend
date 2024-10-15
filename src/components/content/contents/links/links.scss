@@ -1,0 +1,53 @@
+
+.links {
+
+    & .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__link {
+        flex-grow: 1;
+        flex-basis: 1rem;
+
+        display: flex;
+        justify-content: center;
+
+        background-color: rgb(40, 40, 40, 0.8);
+        border-radius: 1rem;
+
+        cursor: pointer;
+
+        & svg {
+            padding: 1.5rem;
+
+            width: 3rem;
+            height: auto;
+
+            fill: white;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .links {
+        & .container {
+            max-width: 80vw;
+        }
+        &__content {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        &__link {
+            
+        }
+    }
+}
